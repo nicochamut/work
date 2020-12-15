@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+    
+    <div id="launch" onclick="startGame()">Start Game</div>
+
+    <div class="sonido" id="sonidoStop"><i class="fas fa-volume-mute"></i></div>
+    <div class="sonidoPlay" id="sonidoPlay"><i class="fas fa-volume-up"></i></div>
+   
+     <div id="tab_grid">
+         <div class="clks" id="p11" onclick="switching('p11');">11</div>
+         <div class="clks" id="p12" onclick="switching('p12');">12</div>
+         <div class="clks" id="p13" onclick="switching('p13');">13</div>
+         <div class="clks" id="p21" onclick="switching('p21');">21</div>
+         <div class="clks" id="p22" onclick="switching('p22');">22</div>
+         <div class="clks" id="p23" onclick="switching('p23');">23</div>
+         <div class="clks" id="p31" onclick="switching('p31');">31</div>
+         <div class="clks" id="p32" onclick="switching('p32');">32</div>
+         <div class="clks" id="p33" onclick="switching('p33');">33</div>
+     </div>
+
+   <div class="left">
+    <div id="moves">Moves: 0
+    
+
+        
+    
+  
+
+    <div id="popup" class="popup">
+        <div class="popup-content" id="contenedor">
+            <form  id="formulario">
+                <table>
+                    <h3 class="bienvenido">Please, enter your name</h3>
+                    <tr><input type="text" id="username" name="username"></tr>
+                </table>
+                <input  class="buton" id="batan" type="button" value="Send" onclick="validar()">
+             </form>
+             <p class="mensaje-error-activo2" id="msj">name is required</p>
+             
+        </div>
+
+    </div>
+
+    
+
+
+    <script src="script.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/brands.min.js" integrity="sha512-vPKAgm60IRSwzDO45UDVa3woLa3hmhFW9RVf8Ue2rBlkow56e6zmiBjTmHbyR7iT3Z2AccKK/bA3PNjiOp3Vjg==" crossorigin="anonymous"></script>
+</body>
+</html>
